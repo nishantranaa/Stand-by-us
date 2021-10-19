@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Stand by us</string>
+    <string name="todo">TODO</string>
+    <string name="settings">settings</string>
+
+    <string-array name="seniorSetUpContacts">
+        <item>Contact 1</item>
+        <item>Contact 2</item>
+        <item>Contact 3</item>
+        <item>Contact 4</item>
+        <item>Contact 5</item>
+        <item>Contact 6</item>
+    </string-array>
+
+    <string-array name="seniorSetUpApps">
+        <item>APP 1</item>
+        <item>APP 2</item>
+        <item>APP 3</item>
+        <item>APP 4</item>
+        <item>APP 5</item>
+        <item>APP 6</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>Select your age</item>
+        <item>LESS 70 YEARS</item>
+        <item>70 - 80 YEARS</item>
+        <item>OVER 80 YEARS</item>
+    </string-array>
+</resources>
