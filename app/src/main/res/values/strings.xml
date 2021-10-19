@@ -2,8 +2,23 @@
     <string name="app_name">Stand by us</string>
     <string name="todo">TODO</string>
     <string name="settings">settings</string>
+    <string name="start">START</string>
+    <string name="junior_advance_settings">Junior Advance Settings</string>
+    <string name="go_on">GO ON</string>
+    <string name="age">AGE</string>
+    <string name="middle_advance_settings">middle advance settings</string>
+    <string name="your_name">Your name</string>
+    <string name="fonts">Fonts</string>
+    <string name="size">Size</string>
+    <string name="select_app">Select APP</string>
+    <string name="insert_your_name">Insert your name</string>
+    <string name="colors">Colors</string>
+    <string name="select_apps">Select APPs</string>
+    <string name="reset">Reset</string>
+
 
     <string-array name="seniorSetUpContacts">
+        <item>Select...</item>
         <item>Contact 1</item>
         <item>Contact 2</item>
         <item>Contact 3</item>
@@ -13,6 +28,7 @@
     </string-array>
 
     <string-array name="seniorSetUpApps">
+        <item>Select...</item>
         <item>APP 1</item>
         <item>APP 2</item>
         <item>APP 3</item>

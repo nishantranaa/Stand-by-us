@@ -8,4 +8,5 @@
         android:icon="@android:drawable/ic_dialog_alert"
         android:title="@string/settings"
         app:showAsAction="never" />
+    <item android:title="@string/reset" />
 </menu>

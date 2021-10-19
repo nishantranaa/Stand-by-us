@@ -8,22 +8,55 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     //private static int TOAST_DURATION;
+    public static boolean start = false;
+    public static boolean junior = false;
+    public static boolean middle = false;
+    public static boolean senior = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //TOAST_DURATION = 1000;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* Main message */
         Toast toast = Toast.makeText(this, "Welcome mate", Toast.LENGTH_SHORT);
         //toast.setDuration(TOAST_DURATION/10);
         toast.show();
+        /* Settings message */
+        Toast toastStart = Toast.makeText
+                (this, "Please do settings first", Toast.LENGTH_SHORT);
+
+        Button startMain = findViewById(R.id.mainButton);
+        Intent intentJunior = new Intent(this, Junior.class);
+        Intent intentMiddle = new Intent(this, Middle.class);
+        Intent intentSenior = new Intent(this, Senior.class);
+
+        startMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (start == false) {
+                    toastStart.show();
+                } else {
+                    if (junior == true) {
+                        startActivity(intentJunior);
+                    } else if (middle == true) {
+                        startActivity(intentMiddle);
+                    } else {
+                        startActivity(intentSenior);
+                    }
+                }
+            }
+        });
+
     }
 
     @Override
@@ -34,13 +67,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Spinner spinnerSetUp = findViewById(R.id.spinnerSetUp);
+        //Spinner spinnerSetUp = findViewById(R.id.spinnerSetUp);
 
         if(item.getItemId() == R.id.settings) {
             Intent intentSetting = new Intent(this, SetUp.class);
             startActivity(intentSetting);
             return true;
 
+        } else {
+            MainActivity.start = false;
         }
         return super.onOptionsItemSelected(item);
 

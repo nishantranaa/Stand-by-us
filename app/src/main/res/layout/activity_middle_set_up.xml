@@ -26,8 +26,8 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:background="#008000"
-          android:text="Settings"
-          android:textAlignment="textStart"
+          android:text="@string/middle_advance_settings"
+          android:textAlignment="center"
           android:textColor="#212121"
           android:textSize="34sp"
           android:textStyle="bold" />

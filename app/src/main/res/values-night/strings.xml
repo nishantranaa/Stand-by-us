@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="settings">settings</string>
+    <string name="start">START</string>
+    <string name="junior_advance_settings">Junior Advance Settings</string>
+    <string name="go_on">GO ON</string>
+    <string name="age">AGE</string>
+    <string name="middle_advance_settings">middle advance settings</string>
+    <string name="your_name">Your name</string>
+    <string name="fonts">Fonts</string>
+    <string name="select_app">Select APP</string>
+    <string name="insert_your_name">Insert your name</string>
+    <string name="select_apps">Select APPs</string>
+    <string name="reset">Reset</string>
 </resources>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StandByUs">
         <activity
+            android:name=".Junior"
+            android:exported="true" />
+        <activity
             android:name=".Middle"
             android:exported="true" />
         <activity

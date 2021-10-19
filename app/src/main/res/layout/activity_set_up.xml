@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/setUp"
@@ -15,8 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#008000"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textAlignment="textStart"
+        android:textColor="#212121"
         android:textSize="34sp"
         android:textStyle="bold" />
 
@@ -35,43 +37,14 @@
                 android:layout_height="match_parent"
                 android:background="#000000">
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginBottom="32dp"
-                    android:text="NAME"
-                    android:textColor="#FFFFFF"
-                    android:textSize="48sp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <EditText
-                    android:id="@+id/editTextTextPersonName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="160dp"
-                    android:layout_marginTop="32dp"
-                    android:background="#FFFFFF"
-                    android:ems="10"
-                    android:hint="Your name"
-                    android:inputType="textPersonName"
-                    android:minHeight="48dp"
-                    android:textAlignment="textStart"
-                    android:textSize="34sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="100dp"
-                    android:text="AGE"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/age"
                     android:textColor="#FFFFFF"
                     android:textSize="48sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -82,9 +55,9 @@
                     android:layout_width="131dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="150dp"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginBottom="32dp"
-                    android:background="#FFFFFF"
+                    android:background="#BFFFFFFF"
                     android:entries="@array/age"
                     android:minHeight="64dp"
                     android:spinnerMode="dialog"
@@ -95,12 +68,14 @@
 
                 <Button
                     android:id="@+id/setUpButton"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:text="GO ON"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#00FF00"
+                    android:text="@string/go_on"
+                    android:textColor="#000000"
                     android:textSize="60sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
