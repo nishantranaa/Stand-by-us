@@ -21,8 +21,6 @@ public class Junior extends AppCompatActivity {
         TextView juniorView = findViewById(R.id.juniorView);
         juniorView.setText(JuniorSetUp.userName.toUpperCase());
 
-        Spinner spinnerJuniorApps = findViewById(R.id.spinnerJuniorSetUpApps);
-
     }
 
     @Override
