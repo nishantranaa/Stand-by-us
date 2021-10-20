@@ -22,6 +22,8 @@
     <string name="contact">contact</string>
     <string name="insert_at_least_one_contact">Insert at least one contact</string>
     <string name="Contact">Contact</string>
+    <string name="press_one_of_your_contact">Press one of your contact</string>
+    <string name="call">call</string>
 
 
     <string-array name="seniorSetUpContacts">

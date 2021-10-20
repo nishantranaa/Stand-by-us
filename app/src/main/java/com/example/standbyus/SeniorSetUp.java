@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class SeniorSetUp extends AppCompatActivity {
     private static int numOfContacts =0;
-    private static ArrayList<String> myContacts;
+    public static ArrayList<String> myContacts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

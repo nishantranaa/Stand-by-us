@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#008000"
-        android:text="User Name"
+        android:text="@string/press_one_of_your_contact"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp" />
 
@@ -28,33 +29,40 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/callDavide"
+                android:id="@+id/contact1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="Call Davide"
-                android:textAlignment="center"
-                android:textSize="48sp"
+                android:backgroundTint="#00FF00"
+                android:hint="@string/call"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/contact2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:backgroundTint="#00FF00"
+                android:hint="@string/call"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="42sp"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/callNishant"
+                android:id="@+id/contact3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="Call Nishant"
-                android:textAlignment="center"
-                android:textSize="48sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/callNavijot"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:text="Call Navijot"
-                android:textAlignment="center"
-                android:textSize="48sp"
+                android:backgroundTint="#00FF00"
+                android:hint="@string/call"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="42sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
