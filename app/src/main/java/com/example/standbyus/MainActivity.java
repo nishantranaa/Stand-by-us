@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        //Spinner spinnerSetUp = findViewById(R.id.spinnerSetUp);
 
         if(item.getItemId() == R.id.settings) {
             Intent intentSetting = new Intent(this, SetUp.class);

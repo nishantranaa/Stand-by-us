@@ -27,6 +27,10 @@
     <string name="select_a_contact">Select a contact</string>
     <string name="select_any_apps">Select any APPs*</string>
     <string name="max_3_apps">* Max 3 Apps</string>
+    <string name="you_are_using">You are using:</string>
+    <string name="no_app_selected">No APP selected</string>
+    <string name="welcome">Welcome</string>
+    <string name="no_user">No user</string>
 
 
     <string-array name="seniorSetUpContacts">

@@ -1,9 +1,12 @@
 package com.example.standbyus;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -26,5 +29,27 @@ public class Senior extends AppCompatActivity {
 
 
         Intent intent = new Intent(this, SetUp.class);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(item.getItemId() == R.id.settings) {
+            Intent intentSetting = new Intent(this, SetUp.class);
+            startActivity(intentSetting);
+            return true;
+        } else {
+            MainActivity.start = false;
+            MainActivity.junior = false;
+            MainActivity.middle = false;
+            MainActivity.senior = false;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
