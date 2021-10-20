@@ -5,8 +5,18 @@
 
     <item
         android:id="@+id/settings"
-        android:icon="@android:drawable/ic_dialog_alert"
+        android:icon="@android:drawable/ic_menu_manage"
         android:title="@string/settings"
         app:showAsAction="never" />
-    <item android:title="@string/reset" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/reset"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/reset"
+        app:showAsAction="never" />
 </menu>

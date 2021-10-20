@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="settings">settings</string>
-    <string name="start">START</string>
+
     <string name="junior_advance_settings">Junior Advance Settings</string>
     <string name="go_on">GO ON</string>
     <string name="age">AGE</string>
@@ -12,4 +12,12 @@
     <string name="insert_your_name">Insert your name</string>
     <string name="select_apps">Select APPs</string>
     <string name="reset">Reset</string>
+    <string name="start">START</string>
+    <string name="contact_2">Contact 2</string>
+    <string name="contact_1">Contact 1</string>
+    <string name="Settings">Settings</string>
+    <string name="senior_advance_settings">Senior advance settings</string>
+    <string name="contact">contact</string>
+    <string name="insert_at_least_one_contact">Insert at least one contact</string>
+    <string name="Contact">Contact</string>
 </resources>

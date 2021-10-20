@@ -15,6 +15,13 @@
     <string name="colors">Colors</string>
     <string name="select_apps">Select APPs</string>
     <string name="reset">Reset</string>
+    <string name="contact_2">Contact 2</string>
+    <string name="contact_1">Contact 1</string>
+    <string name="Settings">Settings</string>
+    <string name="senior_advance_settings">Senior advance settings</string>
+    <string name="contact">contact</string>
+    <string name="insert_at_least_one_contact">Insert at least one contact</string>
+    <string name="Contact">Contact</string>
 
 
     <string-array name="seniorSetUpContacts">

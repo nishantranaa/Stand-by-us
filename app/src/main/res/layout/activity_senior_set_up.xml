@@ -23,8 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#008000"
-                android:text="Settings"
-                android:textAlignment="textStart"
+                android:text="@string/senior_advance_settings"
+                android:textAlignment="center"
                 android:textColor="#212121"
                 android:textSize="34sp"
                 android:textStyle="bold" />
@@ -36,7 +36,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:text="Contact 1"
+                android:text="Contact *"
                 android:textColor="#FFFFFF" />
 
             <Spinner
@@ -46,7 +46,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:background="#FFFFFF"
+                android:background="#BFFFFFFF"
                 android:entries="@array/seniorSetUpContacts"
                 android:minHeight="48dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -58,64 +58,19 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:text="Contact 2"
+                android:text="* Max 3 contacts"
                 android:textColor="#FFFFFF" />
-
-            <Spinner
-                android:id="@+id/spinnerSeniorSetUpContacts1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:background="#FFFFFF"
-                android:entries="@array/seniorSetUpContacts"
-                android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/seniorSetUpView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginRight="20dp"
-                android:text="Contact 3"
-                android:textColor="#FFFFFF" />
-
-            <Spinner
-                android:id="@+id/spinnerSeniorSetUpContacts2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:background="#FFFFFF"
-                android:entries="@array/seniorSetUpContacts"
-                android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:text="Select APP"
-                android:textColor="#FFFFFF" />
-
-            <Spinner
-                android:id="@+id/spinnerSeniorSetUpApps"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:background="#FFFFFF"
-                android:entries="@array/seniorSetUpApps"
-                android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:background="#BFFFFFFF"
+                android:hint="No contact selected"
+                android:textSize="34sp" />
 
             <Button
                 android:id="@+id/startMiddle"
@@ -123,8 +78,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
-                android:background="#000000"
-                android:text="START"
+                android:backgroundTint="#00FF00"
+                android:text="@string/start"
+                android:textColor="#000000"
                 android:textSize="34sp" />
         </LinearLayout>
     </ScrollView>

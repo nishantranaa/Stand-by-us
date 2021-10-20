@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -73,11 +74,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intentSetting = new Intent(this, SetUp.class);
             startActivity(intentSetting);
             return true;
-
         } else {
             MainActivity.start = false;
+            MainActivity.junior = false;
+            MainActivity.middle = false;
+            MainActivity.senior = false;
         }
         return super.onOptionsItemSelected(item);
-
     }
+
 }
