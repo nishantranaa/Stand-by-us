@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -14,7 +13,6 @@ import java.util.ArrayList;
 
 public class SeniorSetUp extends AppCompatActivity {
     private static int numOfContacts =0;
-    private static final String TAG = "Number Of Contacts";
     private static ArrayList<String> myContacts;
 
     @Override
@@ -65,8 +63,7 @@ public class SeniorSetUp extends AppCompatActivity {
                     }
                     seniorSetUpView.setText(myContacts.toString());
                 }
-                //Log.i(TAG, "onClick: " + numOfContacts);
-                Log.i(TAG,"onClick: " + myContacts);
+
                 if(numOfContacts<=2){
                     toastInsertAnotherItem.show();
                 } else {
