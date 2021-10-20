@@ -62,7 +62,7 @@
                 android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/seniorSetUpView"
+                android:id="@+id/juniorSetUpView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -73,7 +73,7 @@
                 android:textSize="34sp" />
 
             <Button
-                android:id="@+id/startMiddle"
+                android:id="@+id/startJunior"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

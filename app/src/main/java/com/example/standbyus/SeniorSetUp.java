@@ -25,9 +25,9 @@ public class SeniorSetUp extends AppCompatActivity {
         Toast toastNoItemSelected =  Toast.makeText(this, "Please select a contact", Toast.LENGTH_SHORT);
         Toast toastInsertAnotherItem =  Toast.makeText(this, "Please insert another contact", Toast.LENGTH_SHORT);
 
-        Button startSenior = findViewById(R.id.startMiddle);
+        Button startSenior = findViewById(R.id.startJunior);
         Spinner seniorSetUpContactsSpinner = findViewById(R.id.spinnerSeniorSetUpContacts);
-        TextView seniorSetUpView = findViewById(R.id.seniorSetUpView);
+        TextView seniorSetUpView = findViewById(R.id.juniorSetUpView);
 
         Intent intentSenior = new Intent(this, Senior.class);
 

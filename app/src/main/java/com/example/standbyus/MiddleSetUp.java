@@ -20,8 +20,8 @@ public class MiddleSetUp extends AppCompatActivity {
         /* Messages */
         Toast toastNoItemSelected = Toast.makeText(this, "Please select an APP", Toast.LENGTH_SHORT);
 
-        Button startMiddle = findViewById(R.id.startMiddle);
-        Spinner spinnerSeniorSetUpApps = findViewById(R.id.spinnerSeniorSetUpApps);
+        Button startMiddle = findViewById(R.id.startJunior);
+        Spinner spinnerSeniorSetUpApps = findViewById(R.id.spinnerJuniorSetUpApps);
 
         Intent intentMiddle = new Intent(this, Middle.class);
 
