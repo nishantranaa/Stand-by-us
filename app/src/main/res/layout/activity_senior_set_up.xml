@@ -11,7 +11,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#40000000">
+        android:background="#40808080">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,7 +37,8 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:text="Contact *"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/spinnerSeniorSetUpContacts"
@@ -66,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:background="#BFFFFFFF"
                 android:hint="No contact selected"
@@ -77,9 +78,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
                 android:backgroundTint="#000000"
-                android:text="@string/start"
+                android:text="@string/set"
                 android:textColor="#FFFFFF"
                 android:textSize="34sp" />
         </LinearLayout>

@@ -9,7 +9,7 @@
   <ScrollView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="#40000000"
+      android:background="#40808080"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,8 @@
           android:layout_marginTop="10dp"
           android:layout_marginRight="20dp"
           android:text="Select APP"
-          android:textColor="#000000" />
+          android:textColor="#000000"
+          android:textStyle="bold" />
 
       <Spinner
           android:id="@+id/spinnerJuniorSetUpApps"
