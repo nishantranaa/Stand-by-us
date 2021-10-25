@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:orientation="vertical"
     tools:context=".JuniorSetUp">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#40000000">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/settings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#008000"
+                android:background="#000000"
                 android:text="@string/junior_advance_settings"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -37,7 +36,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:text="@string/your_name"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
@@ -46,11 +45,12 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:background="#BFFFFFFF"
+                android:background="#FFFFFF"
                 android:ems="10"
                 android:hint="@string/insert_your_name"
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
+                android:textColor="#000000"
                 android:textSize="34sp" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:text="@string/select_any_apps"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
 
             <Spinner
                 android:id="@+id/spinnerJuniorSetUpApps"
@@ -70,7 +70,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:background="#BFFFFFFF"
+                android:background="#FFFFFF"
                 android:entries="@array/seniorSetUpApps"
                 android:minHeight="48dp"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -83,7 +83,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:text="@string/max_3_apps"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
 
             <TextView
                 android:id="@+id/juniorSetUpView"
@@ -112,7 +112,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/fonts"
                         android:textAlignment="textStart"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#000000"
                         android:textSize="34sp"
                         android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                         android:layout_width="266dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="20dp"
-                        android:background="#BFFFFFFF"
+                        android:background="#FFFFFF"
                         android:entries="@array/seniorSetUpContacts"
                         android:minHeight="48dp"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
@@ -140,7 +140,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/colors"
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#000000"
                         android:textSize="34sp"
                         android:textStyle="bold" />
 
@@ -149,7 +149,7 @@
                         android:layout_width="266dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="20dp"
-                        android:background="#BFFFFFFF"
+                        android:background="#FFFFFF"
                         android:entries="@array/seniorSetUpContacts"
                         android:minHeight="48dp"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
@@ -166,7 +166,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/size"
                         android:textAlignment="textStart"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#000000"
                         android:textSize="34sp"
                         android:textStyle="bold" />
 
@@ -175,7 +175,7 @@
                         android:layout_width="266dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="20dp"
-                        android:background="#BFFFFFFF"
+                        android:background="#FFFFFF"
                         android:entries="@array/seniorSetUpContacts"
                         android:minHeight="48dp"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -203,8 +203,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
-                android:background="#000000"
-                android:text="@string/start"
+                android:backgroundTint="#000000"
+                android:text="@string/set"
                 android:textSize="34sp" />
 
         </LinearLayout>

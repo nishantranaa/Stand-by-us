@@ -31,6 +31,8 @@
     <string name="no_app_selected">No APP selected</string>
     <string name="welcome">Welcome</string>
     <string name="no_user">No user</string>
+    <string name="save">SAVE</string>
+    <string name="set">SET</string>
 
 
     <string-array name="seniorSetUpContacts">

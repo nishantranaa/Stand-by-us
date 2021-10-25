@@ -5,27 +5,27 @@
     android:id="@+id/SeniorSetUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     android:orientation="vertical"
     tools:context=".SeniorSetUp">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#40000000">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/seniorSetUpSettings"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#008000"
+                android:background="#000000"
                 android:text="@string/senior_advance_settings"
                 android:textAlignment="center"
-                android:textColor="#212121"
+                android:textColor="#FFFFFF"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:text="Contact *"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
 
             <Spinner
                 android:id="@+id/spinnerSeniorSetUpContacts"
@@ -59,7 +59,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:text="* Max 3 contacts"
-                android:textColor="#FFFFFF" />
+                android:textColor="#000000" />
 
             <TextView
                 android:id="@+id/juniorSetUpView"
@@ -78,9 +78,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
-                android:backgroundTint="#00FF00"
+                android:backgroundTint="#000000"
                 android:text="@string/start"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="34sp" />
         </LinearLayout>
     </ScrollView>

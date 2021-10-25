@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/setUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#FFFFFF"
     android:orientation="vertical"
     tools:context=".SetUp">
 
@@ -15,17 +12,17 @@
         android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#008000"
+        android:background="#000000"
         android:text="@string/settings"
         android:textAlignment="textStart"
-        android:textColor="#212121"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000">
+        android:background="#40000000">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,18 +31,17 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#000000">
+                android:layout_height="match_parent">
 
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="32dp"
                     android:text="@string/age"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#000000"
                     android:textSize="48sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -54,32 +50,30 @@
                     android:id="@+id/spinnerSetUp"
                     android:layout_width="131dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
                     android:layout_marginTop="32dp"
-                    android:layout_marginBottom="32dp"
-                    android:background="#BFFFFFFF"
+                    android:layout_marginEnd="32dp"
+                    android:background="#FFFFFF"
                     android:entries="@array/age"
                     android:minHeight="64dp"
                     android:spinnerMode="dialog"
                     android:textSize="96sp"
-                    app:layout_constraintBottom_toTopOf="@+id/setUpButton"
-                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/setUpButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginEnd="8dp"
-                    android:backgroundTint="#00FF00"
-                    android:text="@string/go_on"
-                    android:textColor="#000000"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="32dp"
+                    android:backgroundTint="#000000"
+                    android:text="@string/save"
+                    android:textColor="#FFFFFF"
                     android:textSize="60sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/spinnerSetUp" />
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
