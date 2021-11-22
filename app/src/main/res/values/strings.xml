@@ -5,7 +5,7 @@
     <string name="start">START</string>
     <string name="junior_advance_settings">Junior Advance Settings</string>
     <string name="go_on">GO ON</string>
-    <string name="age">AGE</string>
+    <string name="age">Age</string>
     <string name="middle_advance_settings">middle advance settings</string>
     <string name="your_name">Your name</string>
     <string name="fonts">Fonts</string>
@@ -33,10 +33,12 @@
     <string name="no_user">No user</string>
     <string name="save">SAVE</string>
     <string name="set">SET</string>
-
+    <string name="no_contact_selected">No contact selected</string>
+    <string name="max_3_contacts">* Max 3 contacts</string>
+    <string name="name">Name</string>
 
     <string-array name="seniorSetUpContacts">
-        <item>Select...</item>
+        <item>Select…</item>
         <item>Contact 1</item>
         <item>Contact 2</item>
         <item>Contact 3</item>
@@ -45,6 +47,18 @@
         <item>Contact 6</item>
     </string-array>
 
+    <string-array name="socialMedia">
+        <item>Select…</item>
+        <item>WhatSUp</item>
+        <item>Signal</item>
+        <item>Messages</item>
+        <item>FaceBook</item>
+        <item>Twitter</item>
+        <item>Discord</item>
+        <item>Instagram</item>
+        <item>Snapchat</item>
+        <item>Pinterest</item>
+    </string-array>
     <string-array name="seniorSetUpApps">
         <item>Select...</item>
         <item>APP 1</item>

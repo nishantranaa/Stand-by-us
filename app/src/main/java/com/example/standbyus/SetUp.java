@@ -1,13 +1,14 @@
 package com.example.standbyus;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SetUp extends AppCompatActivity {
 
@@ -25,6 +26,7 @@ public class SetUp extends AppCompatActivity {
         Toast toastAge = Toast.makeText(this, "Insert your age", Toast.LENGTH_LONG);
 
         Spinner spinnerSetUpItem = findViewById(R.id.spinnerSetUp);
+        EditText editPersonName = (EditText) findViewById(R.id.editPersonName);
         Button setUpButton = findViewById(R.id.setUpButton);
 
         // INTENT
@@ -36,14 +38,19 @@ public class SetUp extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int x = spinnerSetUpItem.getSelectedItemPosition();
-                if(x == 0) {
+                MainActivity.name = editPersonName.getText().toString().toUpperCase();
+                if (MainActivity.name.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Insert your name", Toast.LENGTH_SHORT).show();
+                } else if(x == 0) {
                     toastAge.show();
                 } else if (x == 1) {
+                    intentJunior.putExtra("name", MainActivity.name);
                     startActivity(intentJunior);
                 } else if (x == 2) {
+                    intentMiddle.putExtra("name", MainActivity.name);
                     startActivity(intentMiddle);
-                } else {
-                    System.out.println(x);
+                } else if (x == 3){
+                    intentSenior.putExtra("name", MainActivity.name);
                     startActivity(intentSenior);
                 }
             }

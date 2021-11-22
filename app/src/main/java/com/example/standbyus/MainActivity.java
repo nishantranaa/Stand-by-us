@@ -1,18 +1,15 @@
 package com.example.standbyus;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     //private static int TOAST_DURATION;
@@ -20,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public static boolean junior = false;
     public static boolean middle = false;
     public static boolean senior = false;
+    public static String name = "USER";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
             MainActivity.junior = false;
             MainActivity.middle = false;
             MainActivity.senior = false;
+            MainActivity.name = "USER";
         }
         return super.onOptionsItemSelected(item);
     }

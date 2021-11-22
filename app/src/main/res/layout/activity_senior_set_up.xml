@@ -30,13 +30,24 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/showNamePersonSenior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/name"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:text="Contact *"
+                android:text="@string/contact"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -59,7 +70,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:text="* Max 3 contacts"
+                android:text="@string/max_3_contacts"
                 android:textColor="#000000" />
 
             <TextView
@@ -70,7 +81,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
                 android:background="#BFFFFFFF"
-                android:hint="No contact selected"
+                android:hint="@string/no_contact_selected"
                 android:textSize="34sp" />
 
             <Button
@@ -79,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#000000"
                 android:text="@string/set"

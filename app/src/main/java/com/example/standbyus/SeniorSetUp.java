@@ -1,7 +1,6 @@
 package com.example.standbyus;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +8,16 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 
 public class SeniorSetUp extends AppCompatActivity {
     private static int numOfContacts =0;
     public static ArrayList<String> myContacts;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         myContacts = new ArrayList<>();
@@ -28,6 +31,8 @@ public class SeniorSetUp extends AppCompatActivity {
         Button startSenior = findViewById(R.id.startJunior);
         Spinner seniorSetUpContactsSpinner = findViewById(R.id.spinnerSeniorSetUpContacts);
         TextView seniorSetUpView = findViewById(R.id.juniorSetUpView);
+        TextView showNamePerson = findViewById(R.id.showNamePersonSenior);
+        showNamePerson.setText(getString(R.string.welcome) + " " + MainActivity.name);
 
         Intent intentSenior = new Intent(this, Senior.class);
 

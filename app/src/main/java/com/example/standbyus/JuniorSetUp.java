@@ -1,16 +1,14 @@
 package com.example.standbyus;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -18,7 +16,6 @@ public class JuniorSetUp extends AppCompatActivity {
     public static String userName = "";
     private static int numOfApps = 0;
     public static ArrayList<String> myApp;
-    public static String TAG = "XXXXXXXXXXXXXXXXXXX";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +30,23 @@ public class JuniorSetUp extends AppCompatActivity {
 
         Button juniorStart = findViewById(R.id.startJunior);
         Spinner juniorSpinner = findViewById(R.id.spinnerJuniorSetUpApps);
-        EditText editTextTextPersonName = findViewById(R.id.editTextTextPersonName);
+        //EditText editTextTextPersonName = findViewById(R.id.editTextTextPersonName);
         TextView juniorSetUpView = findViewById(R.id.juniorSetUpView);
-
+        TextView showNamePerson = findViewById(R.id.showNamePersonJunior);
+        showNamePerson.setText(getString(R.string.welcome) + " " + MainActivity.name);
         Intent intentJunior = new Intent(this, Junior.class);
 
         juniorStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int x = juniorSpinner.getSelectedItemPosition();
-                userName = editTextTextPersonName.getText().toString();
-
+                //userName = editTextTextPersonName.getText().toString();
+                /*
                 if (userName.isEmpty()) {
                     toastNoNameInserted.show();
                 }
+
+                 */
                 if(x==0){
                     toastNoItemSelected.show();
                 } else {

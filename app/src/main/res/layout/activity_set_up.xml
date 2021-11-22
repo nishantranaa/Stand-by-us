@@ -35,11 +35,45 @@
 
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="32dp"
+                    android:text="@string/name"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:hint="@string/insert_your_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColorHint="#757575"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="128dp"
                     android:text="@string/age"
                     android:textColor="#000000"
                     android:textSize="48sp"
@@ -51,7 +85,7 @@
                     android:id="@+id/spinnerSetUp"
                     android:layout_width="131dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="128dp"
                     android:layout_marginEnd="32dp"
                     android:background="#FFFFFF"
                     android:entries="@array/age"
@@ -66,7 +100,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="200dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="32dp"
                     android:backgroundTint="#000000"
                     android:text="@string/save"
@@ -74,7 +108,8 @@
                     android:textSize="60sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
