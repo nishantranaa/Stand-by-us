@@ -36,6 +36,14 @@
     <string name="no_contact_selected">No contact selected</string>
     <string name="max_3_contacts">* Max 3 contacts</string>
     <string name="name">Name</string>
+    <string name="surname">surname</string>
+    <string name="my_preferences">my_preferences</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="second_contact_name">Second contact name</string>
+    <string name="contact2">contact 2</string>
+    <string name="third_contact_phone_number">Third contact phone number</string>
+    <string name="first_contact_name">First contact name</string>
+    <string name="first_contact_phone_number">First contact phone number</string>
 
     <string-array name="seniorSetUpContacts">
         <item>Select…</item>
