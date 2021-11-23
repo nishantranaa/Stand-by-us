@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,8 +28,8 @@ public class Senior extends AppCompatActivity {
         contact2 = findViewById(R.id.contact2);
         contact3 = findViewById(R.id.contact3);
         /* Toast messages */
-        Toast toast = Toast.makeText(this, "Welcome User", Toast.LENGTH_LONG);
-        toast.show();
+        //Toast toast = Toast.makeText(this, "Welcome User", Toast.LENGTH_LONG);
+        //toast.show();
         /* Grub all preferences */
         mainPreferences = getApplicationContext().getSharedPreferences("preferences", MODE_PRIVATE);
         sharedPreferences = getApplicationContext().getSharedPreferences("seniorPreferences", MODE_PRIVATE);
@@ -39,14 +38,28 @@ public class Senior extends AppCompatActivity {
         contact2.setText(sharedPreferences.getString("contact2", ""));
         contact3.setText(sharedPreferences.getString("contact3", ""));
         Intent intent = new Intent(this, SetUp.class);
-        //TextView textView = findViewById(R.id.TEST);
-        //textView.setText(mainPreferences.getString("name", "").toUpperCase());
+        /* Make a phone call */
         contact1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String number = "0410422774";
+                String number = sharedPreferences.getString("number1", "");
                 Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
-                //callIntent.setData(Uri.parse("tel:" + number));
+                startActivity(callIntent);
+            }
+        });
+        contact2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String number = sharedPreferences.getString("number2", "");
+                Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
+                startActivity(callIntent);
+            }
+        });
+        contact3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String number = sharedPreferences.getString("number3", "");
+                Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
                 startActivity(callIntent);
             }
         });

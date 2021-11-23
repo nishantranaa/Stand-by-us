@@ -56,6 +56,8 @@
     <string name="ThirdContactName">Third contact name</string>
     <string name="select_your_age">Select your age</string>
     <string name="insert_your_surname">Insert your surname</string>
+    <string name="stand_by_us">STAND BY US</string>
+    <string name="create_user">CREATE USER</string>
 
     <string-array name="seniorSetUpContacts">
         <item>Select…</item>
