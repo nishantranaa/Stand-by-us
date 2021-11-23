@@ -68,7 +68,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:text="contact 1"
+                android:text="@string/contact1"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -79,6 +79,7 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstContactName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/first_contact_name" />
@@ -90,6 +91,7 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstContactPhoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/first_contact_phone_number" />
@@ -113,6 +115,7 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/secondContactName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/second_contact_name" />
@@ -124,9 +127,10 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/secondContactPhoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/third_contact_phone_number" />
+                    android:hint="@string/SecondContactPhoneNumber" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -136,7 +140,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:text="contact 3"
+                android:text="@string/contact_3"
                 android:textColor="#000000"
                 android:textStyle="bold" />
 
@@ -147,9 +151,10 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/thirdContactName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/second_contact_name" />
+                    android:hint="@string/ThirdContactName" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -158,9 +163,10 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/thirdContactPhoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/third_contact_phone_number" />
+                    android:hint="@string/ThirdContactPhoneNumber" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button

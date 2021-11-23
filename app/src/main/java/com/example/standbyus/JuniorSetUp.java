@@ -57,6 +57,7 @@ public class JuniorSetUp extends AppCompatActivity {
                 if (userName.isEmpty()) {
                     toastNoNameInserted.show();
                 }
+                /*
                 if(x==0){
                     toastNoItemSelected.show();
                 } else {
@@ -84,15 +85,16 @@ public class JuniorSetUp extends AppCompatActivity {
                     juniorSetUpView.setText(myApp.toString());
                 }
 
-                /*if (numOfApps<=2){
+                if (numOfApps<=2){
                     toastInsertAnotherItem.show();
                 } else if(userName.isEmpty()){
                     toastNoNameInserted.show();
-                } else */{
+                } else {
                     MainActivity.start = true;
                     MainActivity.junior = true;
-                    startActivity(intentJunior);
-                }
+
+                }*/
+                startActivity(intentJunior);
             }
         });
     }

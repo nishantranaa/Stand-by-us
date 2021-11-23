@@ -44,6 +44,16 @@
     <string name="third_contact_phone_number">Third contact phone number</string>
     <string name="first_contact_name">First contact name</string>
     <string name="first_contact_phone_number">First contact phone number</string>
+    <string name="contact_3">contact 3</string>
+    <string name="contact1">contact 1</string>
+    <string name="second_contact_phone_number">second_contact_phone_number</string>
+    <string name="third_contact_name">third_contact_name</string>
+    <string name="Third_contact_name">Third_contact_name</string>
+    <string name="Third_contact_phone_number">Third_contact_phone_number</string>
+    <string name="Second_contact_phone_number">Second_contact_phone_number</string>
+    <string name="SecondContactPhoneNumber">Second contact phone number</string>
+    <string name="ThirdContactPhoneNumber">Third contact phone number</string>
+    <string name="ThirdContactName">Third contact name</string>
 
     <string-array name="seniorSetUpContacts">
         <item>Select…</item>
