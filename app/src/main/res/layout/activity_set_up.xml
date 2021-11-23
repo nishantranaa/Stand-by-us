@@ -33,11 +33,29 @@
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="@string/insert_your_name"
+                android:textColor="#000000" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nameInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/insert_your_surname"
+                    android:textColor="#000000" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/name"
@@ -46,6 +64,7 @@
                     android:layout_margin="8dp"
                     android:background="#FFFFFF"
                     android:hint="@string/name"
+                    android:textColor="#000000"
                     android:textSize="24sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -56,6 +75,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp">
 
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/select_your_age"
+                    android:textColor="#000000" />
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/surname"
                     android:layout_width="match_parent"
@@ -63,6 +91,7 @@
                     android:layout_margin="8dp"
                     android:background="#FFFFFF"
                     android:hint="@string/surname"
+                    android:textColor="#000000"
                     android:textSize="24sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -75,14 +104,14 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
-                android:background="#ffffff"
+                android:background="#FFFFFF"
                 android:entries="@array/age"
                 android:minHeight="64dp" />
 
             <Button
                 android:id="@+id/setUpButton"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"

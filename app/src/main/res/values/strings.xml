@@ -54,6 +54,8 @@
     <string name="SecondContactPhoneNumber">Second contact phone number</string>
     <string name="ThirdContactPhoneNumber">Third contact phone number</string>
     <string name="ThirdContactName">Third contact name</string>
+    <string name="select_your_age">Select your age</string>
+    <string name="insert_your_surname">Insert your surname</string>
 
     <string-array name="seniorSetUpContacts">
         <item>Select…</item>

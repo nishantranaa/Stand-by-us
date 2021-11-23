@@ -2,11 +2,12 @@ package com.example.standbyus;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -38,9 +39,17 @@ public class Senior extends AppCompatActivity {
         contact2.setText(sharedPreferences.getString("contact2", ""));
         contact3.setText(sharedPreferences.getString("contact3", ""));
         Intent intent = new Intent(this, SetUp.class);
-        TextView textView = findViewById(R.id.TEST);
+        //TextView textView = findViewById(R.id.TEST);
         //textView.setText(mainPreferences.getString("name", "").toUpperCase());
-        textView.setText(mainPreferences.getString("name", "").toUpperCase());
+        contact1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String number = "0410422774";
+                Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + number));
+                //callIntent.setData(Uri.parse("tel:" + number));
+                startActivity(callIntent);
+            }
+        });
     }
 
     @Override

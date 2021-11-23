@@ -5,7 +5,7 @@
     android:id="@+id/senior"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#1A0000FF"
     android:orientation="vertical"
     tools:context=".Senior">
 
@@ -13,11 +13,15 @@
         android:id="@+id/seniorUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#008000"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="#000000"
         android:text="@string/press_one_of_your_contact"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp" />
+        android:textSize="24sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,23 +32,15 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/TEST"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="60sp" />
-
             <Button
                 android:id="@+id/contact1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
-                android:backgroundTint="#00FF00"
+                android:backgroundTint="#0000FF"
                 android:hint="@string/call"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="42sp"
                 android:textStyle="bold"
@@ -54,10 +50,11 @@
                 android:id="@+id/contact2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
-                android:backgroundTint="#00FF00"
+                android:backgroundTint="#0000FF"
                 android:hint="@string/call"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="42sp"
                 android:textStyle="bold" />
@@ -66,10 +63,11 @@
                 android:id="@+id/contact3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
-                android:backgroundTint="#00FF00"
+                android:backgroundTint="#0000FF"
                 android:hint="@string/call"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="42sp"
                 android:textStyle="bold" />
