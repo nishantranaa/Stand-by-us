@@ -83,6 +83,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/first_contact_name" />
+
+                <Button
+                    android:id="@+id/buttonFindImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0000FF"
+                    android:text="@string/find_an_image" />
+
+                <ImageButton
+                    android:id="@+id/showImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    tools:srcCompat="@tools:sample/avatars" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -95,6 +111,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/first_contact_phone_number" />
+
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -119,6 +137,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/second_contact_name" />
+                <Button
+                    android:id="@+id/buttonFindImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0000FF"
+                    android:text="@string/find_an_image" />
+
+                <ImageButton
+                    android:id="@+id/showImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    tools:srcCompat="@tools:sample/avatars" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -155,6 +188,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/ThirdContactName" />
+                <Button
+                    android:id="@+id/buttonFindImage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0000FF"
+                    android:text="@string/find_an_image" />
+
+                <ImageButton
+                    android:id="@+id/showImage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    tools:srcCompat="@tools:sample/avatars" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout

@@ -58,6 +58,7 @@
     <string name="insert_your_surname">Insert your surname</string>
     <string name="stand_by_us">STAND BY US</string>
     <string name="create_user">CREATE USER</string>
+    <string name="find_an_image">Find an image</string>
 
     <string-array name="seniorSetUpContacts">
         <item>Select…</item>
