@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -77,6 +76,19 @@ public class SeniorSetUp extends AppCompatActivity {
                 openGallery1(); // Open images gallery
             }
         });
+        /*
+        buttonFindImage2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGallery2(); // Open images gallery
+            }
+        });
+        buttonFindImage3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openGallery3(); // Open images gallery
+            }
+        });*/
         /* When you press START BUTTON on SENIOR ADVANCE SETTINGS */
         startSenior.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,30 +112,28 @@ public class SeniorSetUp extends AppCompatActivity {
         /* open the images gallery on the phone */
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         startActivityForResult(gallery, PICK_IMAGE);
-        //return true;
     }
-    private void openGallery2() {
-        /* open the images gallery on the phone */
+    /*private void openGallery2() {
+        // open the images gallery on the phone
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         startActivityForResult(gallery, PICK_IMAGE);
-        //return true;
-    }
-    private void openGallery3() {
-        /* open the images gallery on the phone */
+    }*/
+    /*private void openGallery3() {
+        // open the images gallery on the phone
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
         startActivityForResult(gallery, PICK_IMAGE);
-        //return true;
-    }
+    }*/
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.i(">>>>>>>>>>>>", String.valueOf(requestCode));
+        //Log.i(">>>>>>>>>>>>", String.valueOf(requestCode));
+        System.out.println(">>>>>>>>>>>>>>>>>>." + requestCode);
         if (resultCode == RESULT_OK && requestCode == PICK_IMAGE) {
             imageUri = data.getData();
-            //showImage1.setImageURI(imageUri);
-        }/*
-        if (resultCode == 0){
+            showImage1.setImageURI(imageUri);
+        }
+        /*if (resultCode == 0){
             showImage1.setImageURI(imageUri);
         } else if (requestCode == 1) {
             showImage2.setImageURI(imageUri);
