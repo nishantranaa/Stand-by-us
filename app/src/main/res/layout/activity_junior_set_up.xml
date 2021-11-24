@@ -29,28 +29,13 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/showNamePersonJunior"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
-                android:text="@string/your_name"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:background="#FFFFFF"
-                android:ems="10"
-                android:hint="@string/insert_your_name"
-                android:inputType="textPersonName"
-                android:minHeight="48dp"
+                android:text="@string/name"
                 android:textColor="#000000"
                 android:textSize="34sp" />
 
@@ -73,7 +58,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:background="#FFFFFF"
-                android:entries="@array/seniorSetUpApps"
+                android:entries="@array/socialMedia"
                 android:minHeight="48dp"
                 tools:ignore="SpeakableTextPresentCheck" />
 

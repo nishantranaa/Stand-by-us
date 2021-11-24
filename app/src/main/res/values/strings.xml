@@ -5,7 +5,7 @@
     <string name="start">START</string>
     <string name="junior_advance_settings">Junior Advance Settings</string>
     <string name="go_on">GO ON</string>
-    <string name="age">AGE</string>
+    <string name="age">Age</string>
     <string name="middle_advance_settings">middle advance settings</string>
     <string name="your_name">Your name</string>
     <string name="fonts">Fonts</string>
@@ -33,10 +33,35 @@
     <string name="no_user">No user</string>
     <string name="save">SAVE</string>
     <string name="set">SET</string>
-
+    <string name="no_contact_selected">No contact selected</string>
+    <string name="max_3_contacts">* Max 3 contacts</string>
+    <string name="name">Name</string>
+    <string name="surname">surname</string>
+    <string name="my_preferences">my_preferences</string>
+    <string name="preferences">PREFERENCES</string>
+    <string name="second_contact_name">Second contact name</string>
+    <string name="contact2">contact 2</string>
+    <string name="third_contact_phone_number">Third contact phone number</string>
+    <string name="first_contact_name">First contact name</string>
+    <string name="first_contact_phone_number">First contact phone number</string>
+    <string name="contact_3">contact 3</string>
+    <string name="contact1">contact 1</string>
+    <string name="second_contact_phone_number">second_contact_phone_number</string>
+    <string name="third_contact_name">third_contact_name</string>
+    <string name="Third_contact_name">Third_contact_name</string>
+    <string name="Third_contact_phone_number">Third_contact_phone_number</string>
+    <string name="Second_contact_phone_number">Second_contact_phone_number</string>
+    <string name="SecondContactPhoneNumber">Second contact phone number</string>
+    <string name="ThirdContactPhoneNumber">Third contact phone number</string>
+    <string name="ThirdContactName">Third contact name</string>
+    <string name="select_your_age">Select your age</string>
+    <string name="insert_your_surname">Insert your surname</string>
+    <string name="stand_by_us">STAND BY US</string>
+    <string name="create_user">CREATE USER</string>
+    <string name="find_an_image">Find an image</string>
 
     <string-array name="seniorSetUpContacts">
-        <item>Select...</item>
+        <item>Select…</item>
         <item>Contact 1</item>
         <item>Contact 2</item>
         <item>Contact 3</item>
@@ -45,6 +70,18 @@
         <item>Contact 6</item>
     </string-array>
 
+    <string-array name="socialMedia">
+        <item>Select…</item>
+        <item>WhatSUp</item>
+        <item>Signal</item>
+        <item>Messages</item>
+        <item>FaceBook</item>
+        <item>Twitter</item>
+        <item>Discord</item>
+        <item>Instagram</item>
+        <item>Snapchat</item>
+        <item>Pinterest</item>
+    </string-array>
     <string-array name="seniorSetUpApps">
         <item>Select...</item>
         <item>APP 1</item>
